@@ -288,11 +288,11 @@ class GP_Builtin_Translation_Warnings {
 		rsort( $original_parts );
 		rsort( $translation_parts );
 
-		// Items are sorted, so if all is well, will match up.
-		$parts_tags = array_combine( $original_parts, $translation_parts );
-
 		$warnings = array();
-		foreach ( $parts_tags as $original_tag => $translation_tag ) {
+
+		// The tags are sorted and equal in count, so compare them by position.
+		foreach ( $original_parts as $i => $original_tag ) {
+			$translation_tag = $translation_parts[ $i ];
 			if ( $original_tag === $translation_tag ) {
 				continue;
 			}
