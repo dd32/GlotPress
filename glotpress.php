@@ -5,7 +5,6 @@
  * Description: GlotPress is a tool to help translators collaborate.
  * Version: 4.1.0
  * Requires at least: 4.6
- * Tested up to: 6.8
  * Requires PHP: 7.4
  * Author: the GlotPress team
  * Author URI: https://glotpress.blog
